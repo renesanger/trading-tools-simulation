@@ -31,3 +31,4 @@
 /Users/renesanger/TradingSimulation/obj/Debug/net8.0/TradingSimulation.pdb
 /Users/renesanger/TradingSimulation/obj/Debug/net8.0/TradingSimulation.genruntimeconfig.cache
 /Users/renesanger/TradingSimulation/obj/Debug/net8.0/ref/TradingSimulation.dll
+/Users/renesanger/TradingSimulation/obj/Debug/net8.0/TradingSimulation.sourcelink.json

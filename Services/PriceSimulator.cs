@@ -1,3 +1,5 @@
+namespace TradingApp.Simulation
+{
 public class Simulator 
 {
     private Random _random = new Random();
@@ -31,4 +33,5 @@ public class Simulator
         };
     }
 
+}
 }
