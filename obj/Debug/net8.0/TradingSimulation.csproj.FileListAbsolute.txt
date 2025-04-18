@@ -32,3 +32,11 @@
 /Users/renesanger/TradingSimulation/obj/Debug/net8.0/TradingSimulation.genruntimeconfig.cache
 /Users/renesanger/TradingSimulation/obj/Debug/net8.0/ref/TradingSimulation.dll
 /Users/renesanger/TradingSimulation/obj/Debug/net8.0/TradingSimulation.sourcelink.json
+/Users/renesanger/TradingSimulation/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/renesanger/TradingSimulation/bin/Debug/net8.0/Microsoft.Extensions.Diagnostics.Abstractions.dll
+/Users/renesanger/TradingSimulation/bin/Debug/net8.0/Microsoft.Extensions.Hosting.Abstractions.dll
+/Users/renesanger/TradingSimulation/bin/Debug/net8.0/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/renesanger/TradingSimulation/bin/Debug/net8.0/Microsoft.Extensions.ObjectPool.dll
+/Users/renesanger/TradingSimulation/bin/Debug/net8.0/Microsoft.Extensions.Options.dll
+/Users/renesanger/TradingSimulation/bin/Debug/net8.0/Newtonsoft.Json.dll
+/Users/renesanger/TradingSimulation/bin/Debug/net8.0/System.Net.WebSockets.WebSocketProtocol.dll

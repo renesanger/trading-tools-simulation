@@ -1,14 +1,53 @@
+using Microsoft.AspNetCore.SignalR;
+using TradingApp.Simulation;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddControllers(); 
+builder.Services.AddSignalR();
 builder.Services.AddSingleton<TradingApp.Simulation.Simulator>();
+builder.Services.AddSingleton<OrderBook>();
+
+// builder.Services.AddCors(options =>
+// {
+//     options.AddDefaultPolicy(policy =>
+//     {
+//         policy.AllowAnyHeader()
+//               .AllowAnyMethod()
+//               .AllowCredentials()
+//               .SetIsOriginAllowed(_ => true); // For dev only
+//     });
+// });
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowFrontend", policy =>
+    {
+        policy
+            .WithOrigins("http://localhost:3000") // ✅ Don't use "*"
+            .AllowAnyHeader()
+            .AllowAnyMethod()
+            .AllowCredentials(); // ✅ Required when using withCredentials: true
+    });
+});
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+
+// app.MapGet("/test", async (IHubContext<MarketDataHub> hub) =>
+// {
+//     var price = new Price {
+//         CurrentPrice = 123.45m,
+//         LastUpdated = DateTime.UtcNow
+//     };
+//     await hub.Clients.All.SendAsync("ReceivePrice", price);
+//     return Results.Ok(new { message = "Price sent to all clients", price });
+// });
+app.UseCors("AllowFrontend");
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -17,8 +56,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+
 app.UseHttpsRedirection();
 
+app.MapHub<MarketDataHub>("/marketDataHub");
 app.MapControllers();
 app.Run();
 

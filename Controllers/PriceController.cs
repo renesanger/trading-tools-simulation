@@ -10,7 +10,7 @@ public class PriceController : ControllerBase
     public PriceController(Simulator simulator)
     {
         _simulator = simulator;
-        _simulator.PriceSimulator();
+        // _simulator.PriceSimulator();
     }
 
     [HttpGet]
