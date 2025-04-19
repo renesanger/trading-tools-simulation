@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/renesanger/TradingSimulation/TradingSimulation.csproj": {}
+    "/Users/renesanger/TradingSimulation/backend/TradingSimulation.csproj": {}
   },
   "projects": {
-    "/Users/renesanger/TradingSimulation/TradingSimulation.csproj": {
+    "/Users/renesanger/TradingSimulation/backend/TradingSimulation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/renesanger/TradingSimulation/TradingSimulation.csproj",
+        "projectUniqueName": "/Users/renesanger/TradingSimulation/backend/TradingSimulation.csproj",
         "projectName": "TradingSimulation",
-        "projectPath": "/Users/renesanger/TradingSimulation/TradingSimulation.csproj",
+        "projectPath": "/Users/renesanger/TradingSimulation/backend/TradingSimulation.csproj",
         "packagesPath": "/Users/renesanger/.nuget/packages/",
-        "outputPath": "/Users/renesanger/TradingSimulation/obj/",
+        "outputPath": "/Users/renesanger/TradingSimulation/backend/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/renesanger/.nuget/NuGet/NuGet.Config"

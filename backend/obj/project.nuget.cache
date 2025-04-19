@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1xrwkeXifukWAjxMFzlqgNSlSrR3fbNhS4PKfnHrOC28JH/glgzy+sfl4L+c7QI3+VTJgFd9iJtqFVGX8blZOA==",
+  "dgSpecHash": "2cczaj0SJ0CeqtvSn0l1pZzyWCndgpLZpXbELU1z4nRjzeN92lMd+xgcYAVYUenx/rBRmTWI07RnIRiaLRNg1g==",
   "success": true,
-  "projectFilePath": "/Users/renesanger/TradingSimulation/TradingSimulation.csproj",
+  "projectFilePath": "/Users/renesanger/TradingSimulation/backend/TradingSimulation.csproj",
   "expectedPackageFiles": [
     "/Users/renesanger/.nuget/packages/microsoft.aspnetcore.authentication.abstractions/2.3.0/microsoft.aspnetcore.authentication.abstractions.2.3.0.nupkg.sha512",
     "/Users/renesanger/.nuget/packages/microsoft.aspnetcore.authorization/2.3.0/microsoft.aspnetcore.authorization.2.3.0.nupkg.sha512",
